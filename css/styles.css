@@ -41,7 +41,7 @@ img {
   height: auto;
 }
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -97,7 +97,7 @@ body {
   padding-bottom: 24px;
   margin-right: 76px;
 
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 1.33;
@@ -163,6 +163,16 @@ body {
 
 .hero {
   background-color: var(--dark-color);
+
+  background-image: linear-gradient(
+      var(--hero-background-color),
+      var(--hero-background-color)
+    ),
+    url(../images/bg-people-office-min.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
   padding-top: 188px;
   padding-bottom: 188px;
 
@@ -217,8 +227,19 @@ body {
   display: flex;
   gap: 24px;
 }
+
 .features-list > li {
   width: calc((100% - 72px) / 4);
+}
+
+.features-icon {
+  display: block;
+
+  background: var(--light-color);
+  border-radius: 4px;
+
+  padding: 24px 100px;
+  margin-bottom: 8px;
 }
 
 .list-title {
@@ -300,7 +321,7 @@ body {
 .footer-logo {
   display: block;
   margin-bottom: 16px;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 1.33;
